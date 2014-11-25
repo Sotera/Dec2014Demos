@@ -1,0 +1,51 @@
+Use taxi data downloaded here (first file should be enough):
+http://www.andresmh.com/nyctaxitrips/
+
+Tableau Tutorial
+REMINDER: THIS IS A PUBLIC BROADCAST
+
+-Import the files
+--show configuration on import
+--show how to change data types
+--show how to rename columns
+
+-Takes about 7 minutes to import on my machine (or download prebuilt workbook here: )
+
+-Show how to convert Fields to latitude / longitude
+-Talk about measures and dimensions
+-Talk about limits to number of points it can show
+
+-Filter to a SINGLE day
+-plot all latitude / longitude
+-Resize
+-Color by medallion
+---
+-new sheet with total passenger count per medallion
+-Sort
+-Color by hack license
+---
+new sheet with Hack License plotted by sum(total distance) and sorted
+---
+Build out new dashboard with one of the previous two plots and the geo plot (Hack License is a good one)
+set up cross filter driving selection - when Hack License selected, then downselect the geo
+rebuild dashboard to show ALL activity for that cab across all days once filter is in place (remove time filter from underlying geo vis)
+Recolor map view based on time / hour of day
+change color scale to highlight working hours
+---
+build another new sheet showing just the hour of day patterns per Hack 
+add to dashboard
+---
+Calculated fields
+-Make new sheet to show how to build a calculated field (e.g. binning the data) to show fuzzied heatmap.
+
+Optimize extract
+Build blockified heatmap 
+add to dashboard
+
+Build new sheet showing mapping of Hack License -> Medallion
+
+Duplicate map view from dashboard and show how you can make a line view showing progression of pickups
+Animate this view and use the show history with trails feature - show how to build an animation of this
+Build chart with scatterplot of Trip Distance vs Passenger Count on X / Y
+--then add in Hack License to color
+--then add in pickup datetime by day to the Pages for animation
